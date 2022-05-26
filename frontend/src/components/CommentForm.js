@@ -18,7 +18,7 @@ class CommentForm extends React.Component {
       comment_post_id: this.props.router.params.postId,
       comment_author: this.authorNameRef.current.value,
       comment_content: this.commentContentRef.current.value,
-      comment_parent: 0,
+      comment_parent: null,
     };
 
     submitForm(commentData);

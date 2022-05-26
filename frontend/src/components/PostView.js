@@ -13,14 +13,10 @@ import {
   hideLoader,
 } from "../actions";
 import Loader from "./common/Loader";
-//import { nest } from "./common/helper";
-class PostView extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  // }
 
+class PostView extends React.Component {
   componentDidMount() {
-    console.log(this.props.router.params.postId);
+    //console.log(this.props.router.params.postId);
     const { getBlogPost, getBlogPostComment } = this.props;
     getBlogPost(this.props.router.params.postId);
     getBlogPostComment(this.props.router.params.postId);
